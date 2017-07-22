@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var stopRecord: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        statusLabel.text = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func recordAudio(_ sender: UIButton) {
+        setStatus(status: "Recording..");
+    }
 
+    @IBAction func stopRecording(_ sender: UIButton) {
+        setStatus(status: "Stopped");
+    }
+    
+    func setStatus(status:String) {
+        statusLabel.text = status;
+    }
 }
 

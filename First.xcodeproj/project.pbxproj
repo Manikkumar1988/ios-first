@@ -507,6 +507,7 @@
 				3C7828511F21AFFA00359209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7828521F21AFFA00359209 /* Build configuration list for PBXNativeTarget "FirstTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +516,7 @@
 				3C7828541F21AFFA00359209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7828551F21AFFA00359209 /* Build configuration list for PBXNativeTarget "FirstUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +525,7 @@
 				3C7828571F21AFFA00359209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
