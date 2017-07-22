@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         statusLabel.text = ""
-        stopRecord.enabl
+        stopRecord.isEnabled = false;
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,12 +28,15 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(_ sender: Any) {
         setStatus(status: "Recording..");
-
+        stopRecord.isEnabled = true;
+        recordButton.isEnabled = false;
     }
 
 
     @IBAction func stopRecord(_ sender: Any) {
         setStatus(status: "Stopped");
+        stopRecord.isEnabled = false;
+        recordButton.isEnabled = true;
     }
     
     func setStatus(status:String) {
